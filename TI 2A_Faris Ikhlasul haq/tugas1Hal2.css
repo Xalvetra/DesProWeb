@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+  background: url('img/backgroundLogin.jpg');
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: auto;
+  font-family: sans-serif;
+  height: auto;
+}
+.lupa{
+	color: darkblue;
+	text-shadow: 3px 2px 1px grey;
+	font-size: 40px
+	margin: inherit;
+	padding: inherit;
+}
+.masukan{
+  resize:none;
+  width:300px;
+  height:100px;
+}
+.home{
+	color: white
+}
+.home:hover{
+	color:palevioletred;
+}
+.home1{
+  border: none;
+  outline: none;
+  height: 80px;
+  background: #1BD0C9;
+  color: black;
+  font-size: 20px;
+  border-radius: none;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
+}
+.home1:hover{
+	color:palevioletred;
+}
+.back1{
+  border: none;
+  outline: none;
+  height: 80px;
+  background: #1BD0C9;
+  color: black;
+  font-size: 20px;
+  border-radius: none;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+.back1:hover{
+	  font-family: sans-serif;
+	  cursor: pointer;
+      background: green;
+      color: white;
+	  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+
+}
+.gambar{
+	position: absolute;
+    right: 500px;
+    top: 200px;
+	bottom : 200px;
+    width: 500px;
+}
