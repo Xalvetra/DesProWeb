@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Validasi Character</title>
+    </head>
+    <body>
+        <p>Masukkan Nama Anda :</p>
+        <input id="id1" type="text" required>
+        <button onclick="check(id1)">Submit</button>
+        <br>
+        <p id="valid"></p>
+        <script type="text/javascript">
+            function check(char) {
+               if (char.value.length > 20) {
+                   document.getElementById("valid").innerHTML = "Karakter Terlalu Panjang"
+               } else {
+                   document.getElementById("valid").innerHTML = "Ok"
+               }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pengenalan JS</title>
+</head>
+<body>
+	<div id="dv">
+		<p id="p1">Ini Adalah Paragraf Pertama</p>
+		<p id="p2">Ini Adalah Paragraf Kedua</p>
+	</div>
+	<script type="text/javascript">
+		var p3 = document.createElement("p");
+		var node = document.createTextNode("ini Paragraf ke 3 dengan javascript")
+		p3.appenchild(node);
+		document.getElementByid("dv").appenchild(p3);
+	</script>
+</body>
+</html>

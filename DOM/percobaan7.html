@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>JavaScript Introduction</title>
+    </head>
+    <body>
+        <div id="div">
+            <label>First Name :</label><input type="text" id="firstName"><br/>
+            <label>Last Name :</label><input type="text" id="lastName"><br/>
+            <button type="submit" onclick="getValue()">Check!</button>
+        </div>
+        <script type="text/javascript">
+            function getValue() {
+                var firstName = document.getElementById("firstName").value;
+                var lastName = document.getElementById("lastName").value;
+                var par = document.createElement("p");
+                var node = document.createTextNode("Hello "+firstName+" "+lastName);
+                par.appendChild(node);
+                document.getElementById("div").appendChild(par);
+            }
+        </script>
+    </body>
+</html>

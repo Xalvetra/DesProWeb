@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Email Validation</title>
+    </head>
+    <body>
+        <p>Enter your email:</p>
+        <input id="id1" type="email">
+        <button onclick="check()">Submit</button>
+        <br>
+        <p id="valid"></p>
+        <script>
+            function check() {
+                var input = document.getElementById("id1");
+            if (!input.checkValidity()) {
+                document.getElementById("valid").innerHTML = input.validationMessage;
+            } else {
+                document.getElementById("valid").innerHTML = "Input OK"
+            }
+            }
+            
+        </script>
+    </body>
+</html>

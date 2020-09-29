@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Introduction</title>
+    </head>
+    <body>
+        <div id="dv">
+            <p id="p1">This is the first paragraph</p>
+            <p id="p2">This is the second paragraph</p>
+        </div>
+        <script>
+           var parent = document.getElementById("dv");
+           var child = document.getElementById("p2");
+           parent.removeChild(child);
+        </script>
+    </body>
+</html>
