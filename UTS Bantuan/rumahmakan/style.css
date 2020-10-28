@@ -1,0 +1,103 @@
+body{
+	margin : auto;
+	background-color: white;
+}
+
+#main{
+	margin-left: 10px;
+	margin-right: 10px;
+
+}
+
+.ContainerTop{
+	float:left;
+	background-color: white;
+	text-align: left;
+}
+.ContainerTop #menu-kanan{
+  float:right;
+  height: 55px;
+  width: auto;
+  background-color: white;
+  align-items: center;
+}
+.ContainerTop #menu-kanan ul {
+    list-style: none;
+}
+.ContainerTop #menu-kanan ul li {
+    text-align: top;
+  float: left;
+}
+.ContainerTop #menu-kanan ul li a{
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 0px 20px;
+  line-height:25px
+}
+.ContainerTop #menu-kanan ul li a:hover{
+    background-color: #FFF;
+  color: #070707;
+}
+
+
+.ContainerMid{
+	background-color: white;
+	width: 100%;
+	height: auto;
+}
+
+.ContainerMid .box1 {
+	margin-left: 20px;
+	background-color: white;
+}
+
+.ContainerMid .box2 {
+	margin-left: 60px;
+	background-color: white;
+}
+
+.ContainerMid .box3 {
+	margin-left: 60px;
+	background-color: white;
+}
+
+.ContainerMid .box4 {
+	margin-left: 60px;
+	background-color: white;
+}
+
+
+
+.ContainerFooter{
+		
+	background-color: #f2f1ed;
+	text-align: center;
+}
+
+.ContainerFooter #menu-bawah{
+  
+  height: 55px;
+  width: auto;
+  background-color: #f2f1ed;
+  align-items: center;
+}
+.ContainerFooter #menu-bawah ul {
+    list-style: none;
+}
+.ContainerFooter #menu-bawah ul li {
+    text-align: top;
+  float: left;
+
+}
+.ContainerFooter #menu-bawah ul li a{
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 0px 20px;
+  line-height:65px
+}
+.ContainerFooter #menu-bawah ul li a:hover{
+    background-color: #FFF;
+  color: #070707;
+}

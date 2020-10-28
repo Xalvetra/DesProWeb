@@ -1,0 +1,78 @@
+//Faris Ikhlasul Haq
+//TI-2A
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Profil</title>
+<link href="ProfilCSS.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="jquery-3.5.1.js"></script>
+        <script>
+            var i=0;
+            $(document).ready(function(){
+                $('#slider img').hide();
+                showNextImage();
+                setInterval('showNextImage()',3000);
+            });
+
+            function showNextImage(){
+                i++;
+                $('#sliderImage'+i).appendTo('#slider').fadeIn(1100).fadeOut(1100);
+                $('#title'+i).appendTo('#slider').fadeIn(1100).delay(1100).fadeOut(1100);
+                if(i==99){
+                    i==0;
+                }
+            }
+        </script>
+</head>
+<body>
+<div class="container">
+  <header>
+
+    <div class="primary_header">
+	 <p style=”text-align: justify;”>
+	  <img src="FotoProfil/1.png" class="logo">
+	  <h1 class="title">Rumah Makan Simpang Luwe</h1></p>
+    </div>
+  </header>
+	<form method="post" action="Home.html">
+       <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="submit" value="Masuk Home"> 
+      </form>
+  <section>
+    <h2 class="noDisplay">Profil</h2>
+    <article class="left_article">
+      <h3>TENTANG SIMPANG LUWE</h3>
+      <p>Di Simpang Luwe ini Anda dapat menikmati aneka menu hidangan yang terbagi dalam 4 brand kuliner yakni diantaranya Sederhana Saja, Rawon Blonceng, Miekirmie dan Phoenam Kopithiam. Keempat brand tersebut menawarkan sajian khas dengan keunikan dan citarasa tersendiri yang siap membuat pengalaman berkuliner akan terasa berbeda setiap kali datang ke Simpang Luwe. Aneka menu tersebut diantaranya aneka ragam hidangan masakan padang, rawon blonceng yang merupakan perpaduan antara nasi putih hangat, daging empal, mendol goreng, kecambah dan sambal rawon, Miekirmie yang didalamnya terdapat Mie Rendang, Mie Sate, Tomyam dan Ramen dan yang terakhir Phoenam yang merupakan satu-satunya yang menawarkan menu minuman berupa kopi tradisional Makassar. Bukan hanya itu, Simpang Luwe Malang juga menghadirkan banyak menu ringan lainnya sebagai teman bersantai Anda selama berada disana seperti contohnya roti bakar, aneka kue basah, omelette, beefstick, aneka milkshake dan minuman bersoda lainnya. Untuk yang suka nongkrong sekaligus nobar sepakbola mungkin dapat menjadikan Simpang Luwe Malang sebagai salah satu referensi tempat bersantai sekaligus berkuliner Anda, dikarena Cafe ini sering mengadakan acara nonton bareng big match klub Eropa.
+    </article>
+    <aside class="right_article"><img src="FotoHome/SL.jpg" width="400" height="200" class="placeholder"/> </aside>
+  </section>
+  <div class="row">
+    <div class="columns">
+      <p class="thumbnail_align"> <img src="FotoHome/1.jpg" alt="" class="thumbnail"/> </p>
+      <h4>Nasi Briyani</h4>
+      <p>Nasi biryani atau biriani, beriani, atau briyani adalah hidangan berupa nasi yang dimasak dengan rempah-rempah lalu ditambah dengan sayuran, atau daging. Makanan ini berasal dari Asia Selatan. Di Indonesia dan Malaysia, hidangan ini disebut dengan tambahan kata nasi.</p>
+    </div>
+    <div class="columns">
+      <p class="thumbnail_align"> <img src="FotoHome/2.jpg" alt="" class="thumbnail"/> </p>
+      <h4>KEBAB</h4>
+      <p>Kebab adalah penganan cepat saji terdiri atas daging sapi yang dipanggang seperti satai kemudian diiris-iris ditambah dengan sayuran segar dan mayones, lalu dibalut dengan kulit tortila..</p>
+    </div>
+    <div class="columns">
+      <p class="thumbnail_align"> <img src="FotoHome/3.jpg" alt="" class="thumbnail"/> </p>
+      <h4>GULAI</h4>
+      <p>Gulai adalah masakan berbahan baku daging ayam, aneka ikan, kambing, sapi, jeroan, atau sayuran seperti nangka muda dan daun singkong, yang diolah dalam kuah bumbu rempah yang bercita rasa gurih.</p>
+    </div>
+    <div class="columns">
+      <p class="thumbnail_align"> <img src="FotoHome/4.jpg" alt="" class="thumbnail"/> </p>
+      <h4>SATE</h4>
+      <p>Sate atau satai adalah makanan yang terbuat dari daging yang dipotong kecil-kecil dan ditusuk sedemikian rupa dengan tusukan lidi tulang daun kelapa atau bambu kemudian dipanggang menggunakan bara arang kayu. Sate disajikan dengan berbagai macam bumbu yang bergantung pada variasi resep sate.</p>
+    </div>
+  </div>
+
+  <footer class="secondary_header footer">
+    <div class="copyright">&copy;2020 - <strong>Designed By faris</strong></div>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+body {
+  background-image: url(img/trasher.jpg);
+  margin: 0;
+}
+
+.header {
+  background-color: bisque;
+  padding: 20px;
+  text-align: center;
+}
+
+h1{
+  color: black;
+  background-color: antiquewhite;
+  font-weight: bold;
+  font-size: 100pt;
+  text-align: center;
+  letter-spacing: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.biodata{
+    font-family: sans-serif;
+    color: black;
+}
+
+
+/* h2{
+  color: green;
+  font-size: 24pt;
+  text-align: center;
+  font-style: italic;
+} */
+
+/* body{
+  background: cornsilk;
+} */
+.gambar{
+  width: 380px;
+  height: 490px;
+
+}
