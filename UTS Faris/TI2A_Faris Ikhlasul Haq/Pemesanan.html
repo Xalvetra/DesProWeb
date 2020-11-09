@@ -1,37 +1,162 @@
-//Faris Ikhlasul Haq
-//TI-2A
-<!doctype html>
+<!DOCTYPE HTML>
+<!--
+    Faris Ikhlasul Haq'
+    TI-2A
+-->
 <html>
-<head>
-<meta charset="utf-8">
-<title>Pemesanan</title>
-</head>
-	<form method="post" action="pesananPrint.php">
-			<p>Apakah ID Anda? </p>
-			<input type="text" name="id" SIZE="50">
+   <head>
+      <title>Pemesanan</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="UTF-8" />
+	   
+     <style>
+          .tombol{
+          background:#2C97DF;
+          color:white;
+          border-top:0;
+          border-left:0;
+          border-right:0;
+          border-bottom:5px solid #2A80B9;
+          padding:10px 20px;
+          text-decoration:none;
+          font-family:sans-serif;
+          font-size:11pt;
+         }
+        </style>
+      <link rel="stylesheet" href="Pemesanan.css" type="text/css">
+      </head>
 
-			<p>Siapakah nama Anda?</p>
-			<input type="text" name="nama" SIZE="50">
+      <body>
+      <h1 class="head">Pemesanan Menu Simpang Luwe</h1>
 
-			<p>Apakah Anda Pelanggan Member atau Non-Member? </p>
-			<input type="radio" name="var3" value="Member">Member<br><br>
-			<input type="radio" name="var3" value="Non-Member">Non-member<br><br>
 
-			<p>Pilih menu makanan</p>
-  			<input type="checkbox" id="makanan1" name="mak1" value="NasiB">
-			<label for="makanan1"> Nasi Briyani</label><br>
-			<input type="checkbox" id="makanan2" name="mak2" value="Kebab">
-			<label for="makanan2"> Kebab</label><br>
-			<input type="checkbox" id="makanan3" name="mak3" value="Gulai">
-			<label for="makanan3"> Gulai</label><br>
-			<input type="checkbox" id="makanan4" name="mak4" value="Sate">
-			<label for="makanan4"> Sate</label><br>
-			</select>
-			<br><br>
+      <div class="porduct-order-agile" id="form">			
+        <div class="identitas">
+        <p>NIM</p>      
+        <input type="text" id="nim" SIZE="30" placeholder="Masukkan NIM anda">
+        <BR><BR>
+        </div>
 
-			<input type="submit" name="var91" value="Send"><br>
-			<input type="reset" name="var92" value="Clear"><br><br>
-		
-<body>
-</body>
+        <p>NAMA</p>      
+        <div class="identitas">
+        <input type="text" id="nama" SIZE="30" placeholder="Masukkan Nama anda">
+        <BR><BR>
+        </div>
+
+        <p>ALAMAT</p>      
+        <div class="identitas">
+        <input type="text" id="alamat" SIZE="30" placeholder="Masukkan Alamat anda">
+        </div>
+
+        <p>Kode POS</p>      
+        <div class="identitas">
+        <input type="text" id="kodepos" SIZE="30" placeholder="Masukkan Kode POS anda"> 
+        </div>
+
+        <B>TERMASUK : </b>
+        <BR>
+        <input type="radio" id="pilih" name="pilih" value="Member">Member<BR>
+        <input type="radio" id="pilih" name="pilih" value="Non Member">Non Member<BR>
+        <BR><BR>
+
+        <b>Menu</b>
+        <br>
+        <select id="menu"></select>
+        <br><br>
+
+        <b>Jumlah</b>
+        <br>
+        <input type="number" id="jumlah">
+        <br><br>
+
+        <button onclick="proses()" class="tombol">Submit</button>
+        <br><br>
+        <div id="cetak"></div>
+        <br><br>
+        </div>
+		  <br>
+       <a href="Home.html"><input type="submit" Class ="tombol" value="Kembali Home"> </a>
+
+
+	   <script>
+      var menu = ["Nasi Briyani", "Kebab", "Gulai", "Sate"];
+      var select = document.getElementById("menu");
+
+        for (var i = 0; i < menu.length; i++) {
+            var opt = menu[i];
+            var el = document.createElement("option");
+            el.textContent = opt;
+            el.value = opt;
+            select.appendChild(el);}
+
+	   function proses() {
+            var nim = document.getElementById("nim").value;
+            var nama = document.getElementById("nama").value;
+            var alamat = document.getElementById("alamat").value;
+            var kodepos = document.getElementById("kodepos").value;
+            var pilih = document.getElementById("pilih").checked;
+            var menu = document.getElementById("menu").value;
+            var jumlah = document.getElementById("jumlah").value;
+            var harga;
+            var diskon;
+
+            if (pilih == true) {
+                pilih = "Member";
+            }
+            else {
+                pilih = "Non-member";
+            }
+
+            if (menu == "Nasi Ibrani") {
+                harga = 30000;
+            } else if (menu == "Kebab") {
+                harga = 10000;
+            } else if (menu == "Gulai") {
+                harga = 15000;
+            } else {
+                harga = 17000;
+            }
+
+            if (pilih == "Member") {
+                if (jumlah == 1) {
+                    diskon = harga * 0.05;
+                } else if (jumlah <= 3) {
+                    diskon = harga * 0.07;
+                } else {
+                    diskon = harga * 0.1;
+                }
+            } else {
+                if (jumlah <= 3) {
+                    diskon = 0;
+                } else if (jumlah <= 5) {
+                    diskon = (harga * jumlah) * 0.05;
+                } else {
+                    diskon = harga * 0.05;
+                }
+            }
+
+            var total = harga * jumlah;
+            var total_bayar = (harga * jumlah) - diskon;
+            var cetak = "STRUK PEMBAYARA  </br>" +
+                "------------------------------- </br>" +
+                "NIM Customer : " + nim + "</br>" +
+                "Nama Customer : " + nama + "</br>" +
+                "Alamat Customer : " + alamat + "</br>" +
+                "Kode Pos Customer : " + kodepos + "</br>" +
+                "Status Customer : " + status + "</br>" +
+                "Menu : " + menu + "</br>" +
+                "Jumlah Menu : " + jumlah + "</br>" +
+                "Harga Satuan : " + harga + "</br>" +
+                "------------------------------- </br>" +
+                "Total : " + total + "</br>" +
+                "Diskon  : " + diskon + "</br>" +
+                "******************************* </br>" +
+                "Total Bayar : " + total_bayar + "</br>" +
+                "</br>" + "</br>" +
+                " TERIMA KASIH TELAH MEMBELI " ;
+            document.getElementById("cetak").innerHTML = cetak;
+        }
+	   </script>
+   </body>
+
 </html>
