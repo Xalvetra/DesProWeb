@@ -13,9 +13,7 @@
             if(isset($_GET['error'])){
                 $error=$_GET['error'];
             }else{
-                $error="";
-            }
-
+                $error="";}
             //siapkan pesan kesalahan
             $pesan="";
             if($error=="variabel_belum_diset"){
@@ -29,7 +27,6 @@
             }else if($error == "email_invalid"){
                 $pesan = "Email tidak sesuai";
             }
-
             //siapkan isian form jika terjadi kesalahan
             if(isset($_GET['nama']) AND isset($_GET['email']) AND isset($_GET['komentar'])){
                 $nama=$_GET['nama'];
@@ -38,8 +35,7 @@
             }else{
                 $nama="";
                 $email="";
-                $komentar="";
-            }
+                $komentar=""; }
         ?>
         <span class="error"><?php echo $pesan; ?></span>
         <table>
