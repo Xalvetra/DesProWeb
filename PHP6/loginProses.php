@@ -4,7 +4,8 @@
     $username = $_POST['username'];
     $password = md5($_POST['password']);
 
-    $query="select * from user where username='$username' and password='$password'";
+    $query="select * from user where username='$username' and 
+    password='$password'";
     $result = mysqli_query($connect, $query);
     $cek = mysqli_num_rows($result);
 
