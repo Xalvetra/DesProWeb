@@ -1,0 +1,55 @@
+.jumbotron {
+    position: relative;
+    overflow: hidden;
+}
+
+.jumbotron {
+    width: 100%;
+    height: 100%;
+}
+
+.jumbotron {
+    background-image: url("img/TesItem1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 -100px;
+}
+
+.jumbotron h1,
+.jumbotron p {
+    text-shadow: 1 px 1px 10px sgba(255, 255, 255, 0.5);
+}
+
+.jumbotron img {
+    box-shadow: 1 px 1px 10px rgba(255, 255, 255, 0.5);
+}
+
+.navbar {
+    color: aquamarine;
+}
+
+.container-LatarBelakang {
+    background-image: url("img/TesItem2.jpeg");
+    background-attachment: fixed;
+}
+
+.container-Produk {
+    background-image: url("img/TesItem3.png");
+    background-attachment: fixed;
+}
+
+.container-Lokasi {
+    background-image: url("img/BG-Lokasi.jpg");
+    background-attachment: fixed;
+}
+
+.card-Warna {
+    background-color: #3deb34;
+    width: fit-content;
+    height: fit-content;
+}
+
+.img-Card {
+    width: 600px;
+    height: 300px;
+}
