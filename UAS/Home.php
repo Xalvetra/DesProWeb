@@ -40,7 +40,8 @@
 
             </div>
             <div class="ml-6">
-                <a href="LoginUserAdmin.php"><img src="img/AvatarLogin.png" width="35" height="35 " href="LoginUserIndex.html"></a>
+                <a href="LoginUserAdmin.php"><img src="img/AvatarLogin.png" width="35" height="35 "></a>
+                <a href="LoginAdmin.php"><img src="img/AdminLogin.png" width="55" height="55 "></a>
             </div>
         </div>
     </nav>

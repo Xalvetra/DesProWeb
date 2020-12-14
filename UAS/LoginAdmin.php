@@ -15,23 +15,16 @@
 <body>
     <section>
     <div class="sidenav container-bg">
-    <div class="row ">
-    <div class="col-md text-justify ml-2 ">
-    <img src="img/WastOProfil.png" width="130" height="130" class="rounded-circle mt-3 md-4 ml-5">
-             
-    </div>
-    <div class="col-md ml-5 mr-4 pt-5 mt-2 ">
-    <a href="Home.php"><img src="img/HomeButton.png" width="55" height="55 " href="Home.php"></a>\
-    <p><b>HOME</b></p>
-    </div>
-    </div>
-
+        <img src="img/WastOProfil.png" width="130" height="130" class="rounded-circle mt-3 md-4 ml-5">
         <div class="Semboyan">
             <p><b>GO</b> Waste <b>GO</b> Stack </p>
         </div>
+
+        
+
         <div class="login-main-text">
             <h2><b>Wast'</b><i>O</i><br>Masuk</h2>
-            <p>Login or register from here to access.</p>
+            <p>ADMIN ONLY LOGIN</p>
         </div>
     </div>
     <div class="main">
@@ -39,8 +32,8 @@
             <div class="login-form">
                 <form action="#proses" method="POST">
                     <div class="form-group">
-                        <label>User Name</label>
-                        <input type="text" class="form-control" placeholder="User Name" name="username">
+                        <label>Your ID</label>
+                        <input type="text" class="form-control" placeholder="User Name" name="id">
                     </div>
                     <div class="form-group">
                         <label>Password</label>
@@ -49,7 +42,9 @@
                     <button type="submit" class="btn btn-black" name="login">Login</button>
                 </form>
                 <br>
-                <a href="Registrasi.php"><button type="submit" class="btn btn-secondary" >Sign In</button></a>
+                <div class="ml-1">
+                 <a href="Home.php"><img src="img/HomeButton.png" width="45" height="45"></a> 
+                </div>
             </div>
         </div>
     </div>
@@ -59,19 +54,19 @@
     include "koneksi.php";
     if(isset($_POST["login"])){
 
-        $username = $_POST['username'];
+        $id = $_POST['id'];
         $password = $_POST['password'];
 
-        $query="SELECT * FROM user WHERE username='$username' AND 
+        $query="SELECT * FROM admin WHERE id='$id' AND 
         password ='$password'";
         $result = mysqli_query($connect, $query);
         $cektest = mysqli_num_rows($result);
 
         if($cektest){
-            echo "<script>alert('Anda Berhasil Login');history.go(-1); </script>";
+            echo "<script>alert('Admin Masuk');history.go(-1); </script>";
             header('Location: Pemesanan.php');
             } else{
-            echo "<script>alert('Gagal Login');history.go(-1);</script>";
+            echo "<script>alert('Gagal Masuk / Anda Bukan Admin');history.go(-1);</script>";
             echo mysqli_error($connect);
          }
       mysqli_close($connect);

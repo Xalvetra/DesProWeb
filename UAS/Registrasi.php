@@ -1,39 +1,94 @@
-<html>
+<html lang = "en">
 
-<head></head>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Register</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- CSS File -->
+    <link rel='stylesheet' type='text/css' media='screen' href="style1.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+</head>
 
 <body>
-    <table>
-        <form action="RegistrasiProses.php" method="GET">
-            <tr>
-                <td>ID: </td>
-                <td><input type="text" name="id"></td>
-            </tr>
-            <tr>
-                <td>username yang akan dipakai: </td>
-                <td><input type="text" name="username"></td>
-            </tr>
-            <tr>
-                <td>Password: </td>
-                <td><input type="text" name="password"></td>
-            </tr>
-            <tr>
-                <td>Nama : </td>
-                <td><input type="text" name="nama"></td>
-            </tr>
-            <tr>
-                <td>Tanggal Lahir: </td>
-                <td><input type="text" name="ttl"></td>
-            </tr>
-            <tr>
-                <td>Alamat : </td>
-                <td><textarea name="alamat" cols="20" rows="5"></textarea></td>
-            </tr>
-            <tr>
-                <td><input type="submit" name="kirim" value="Kirim"></td>
-            </tr>
-        </form>
-    </table>
+    <div class="sidenav container-bg">
+        <img src="img/WastOProfil.png" width="130" height="130" class="rounded-circle mt-3 md-4 ml-5">
+        <div class="Semboyan">
+            <p><b>GO</b> Waste <b>GO</b> Stack </p>
+        </div>
+        <div class="login-main-text">
+            <h2><b>Wast'</b><i>O</i><br>Masuk</h2>
+            <p>Login or register from here to access.</p>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="col-md-6 col-sm-12">
+            <div class="login-form">
+                <form action="#proses" method="GET">
+                    <div class="form-group">
+                        <label>ID</label>
+                        <input type="text" class="form-control" placeholder="Id" name="id">
+                    </div>
+                    <div class="form-group">
+                        <label>UserName</label>
+                        <input type="text" class="form-control" placeholder="UserName" name="username">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control" placeholder="Password" name="password">
+                    </div>
+                    <div class="form-group">
+                        <label>Nama</label>
+                        <input type="text" class="form-control" placeholder="Nama" name="nama">
+                    </div>
+                    <div class="form-group">
+                        <label>Tanggal Lahir</label>
+                        <input type="text" class="form-control" placeholder="Tanggal Lahir" name="ttl">
+                    </div>
+                    <div class="form-group">
+                        <label>Alamat</label>
+                        <textarea cols="20" rows="5" class="form-control" placeholder="Alamat" name="alamat"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-black" name="register">Sign In</button>
+                    </form>
+
+            <section id="proses" class="proses">
+                <?php
+                    if(isset($_GET["register"])){
+                    include "koneksi.php";
+
+                    $id=$_GET['id'];
+                    $username=$_GET['username'];
+                    $password=$_GET['password'];
+                    $nama=$_GET['nama'];
+                    $ttl=$_GET['ttl'];
+                    $alamat=$_GET['alamat'];
+
+
+                    $sql="INSERT INTO user(id, username, password, nama, ttl, alamat)
+                        VALUE('$id', '$username', '$password', '$nama', '$ttl', '$alamat')";
+
+                    if (mysqli_query($connect, $sql)){
+                        echo "<script>alert('Anda Berhasil Registrasi');history.go(-1); </script>";
+                        header('Location: LoginUserAdmin.php');
+                        }else{
+                        echo "<script>alert('Gagal Registrasi');history.go(-1);</script>";
+                        echo mysqli_error($connect);
+                    }
+
+                    mysqli_close($connect);
+                    }
+                ?>
+            </section> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery & Javascript -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="jquery-ui-1.12.1/jquery-ui.min.css"></script>
 </body>
 
 </html>

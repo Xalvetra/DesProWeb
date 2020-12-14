@@ -23,7 +23,7 @@
             </div>    
             <div class="row cart-body">
                 
-                <form class="form-horizontal" method="GET" action="PemesananProses.php">
+                <form class="form-horizontal" method="GET" action="#proses">
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-md-push-6 col-sm-push-6">
                 <div class="panel panel-info">
                         <div class="panel-heading">Alamat Titik</div>
@@ -80,7 +80,7 @@
                             </div>
                             <div class="form-group">
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <button type="submit" class="btn btn-primary btn-submit-fix"> ~ Booking ~</button>
+                                    <button type="submit" class="btn btn-primary btn-submit-fix" name="booking"> ~ Booking ~</button>
                                 </div>
                             </div>
                          </div>
@@ -165,8 +165,10 @@
                     
                     <!--SHIPPING METHOD END-->
                 </form>
-                <section>
+                <section id="proses" class="proses">
                 <?php
+                if(isset($_GET["booking"])){
+
                     include "koneksi.php";
                     
                     $noid=$_GET['noid'];
@@ -187,13 +189,14 @@
 
 
                     if (mysqli_query($connect, $sql)){
-                        echo "Data Anda Berhasil berhasil ditambahkan";
+                        echo "<script>alert('Anda Berhasil Login');history.go(-1); </script>";
+                        header('Location: Pemesanan.php');
+                        } else{
+                        echo "<script>alert('Gagal Login');history.go(-1);</script>";
+                        echo mysqli_error($connect);
                     }
-                    else{
-                        echo "Data Anda gagal ditambahkan <br>" . mysqli_error($connect);
-                    }
-
                     mysqli_close($connect);
+                }
                     ?>
                 </section>
             </div>
