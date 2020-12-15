@@ -30,20 +30,19 @@
 </head>
 
 <body class="mt-4">
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm fixed-top">
-        <h5 class="my-0 mr-md-auto font-weight-normal"><b>Wast</b>'<i>O</i></h5>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom shadow-sm fixed-top bg-warna">
+    <img src="img/TulisanLogoPojok.png" width="90" height="30" class="my-0 mr-md-auto" alt="" loading="lazy">
         <nav class="my-2 my-md-0 mr-md-3">
-            <a class="p-2 text-dark" href="#Agen">Agen</a>
-            <a class="p-2 text-dark" href="#PengambilanSampah">Pengambilan Sampah</a>
+            <a class="p-2 text-success" href="#Agen"><b>Agen</b></a>
+            <a class="p-2 text-success" href="#PengambilanSampah"><b>Pengambilan Sampah</b></a>
         </nav>
-        <a class="btn btn-outline-primary" href="#">Sign up</a>
+        <a class="btn btn-outline-primary btn btn-outline-success" href="index.php">Home</a>
     </div>
 
     <!-- Pengambilan Section -->
     <section id="PengambilanSampah">
         <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-            <h1 class="display-4">Paket Pengambilan</h1>
-            <p class="lead">Awal.</p>
+            <h1 class="display-4 text-dark"><b>Paket Pengambilan</b></h1>
         </div>
 
 
@@ -60,7 +59,7 @@
                             <li>Mengikuti Wilayah RT/RW</li>
                             <li>Non Bonus OVO Points</li><br>
                         </ul>
-                        <button type="button" class="btn btn-lg btn-block btn-primary">Pesan</button>
+                        <a href ="PemesananCheckOut.php"><button type="button" class="btn btn-lg btn-block btn-primary bg-success">Pesan</button></a>
                     </div>
                 </div>
                 <div class="card mb-4 shadow-sm">
@@ -74,7 +73,7 @@
                             <li>Bisa Private / Mengikuti Wilayah RT/RW</li>
                             <li>Bonus OVO Points <b>5K-10K</b></li>
                         </ul>
-                        <button type="button" class="btn btn-lg btn-block btn-primary">Pesan</button>
+                        <a href ="PemesananCheckOut.php"><button type="button" class="btn btn-lg btn-block btn-primary bg-success">Pesan</button></a>
                     </div>
                 </div>
                 <div class="card mb-4 shadow-sm">
@@ -88,7 +87,7 @@
                             <li>Bisa Private / Mengikuti Wilayah RT/RW</li>
                             <li>Bonus OVO Points <b>8K-15K</b></li>
                         </ul>
-                        <button type="button" class="btn btn-lg btn-block btn-primary">Pesan</button>
+                        <a href ="PemesananCheckOut.php"><button type="button" class="btn btn-lg btn-block btn-primary bg-success">Pesan</button></a>
                     </div>
                 </div>
             </div>
@@ -97,8 +96,7 @@
     <!-- Agen Section -->
     <section id="Agen">
         <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 pb-3 mx-auto text-center">
-            <h1 class="display-4">Agen Kebersihan</h1>
-            <p class="lead">Awal.</p>
+            <h1 class="display-4 text-dark"><b>Agen Kebersihan</b></h1>
         </div>
 
         <div class="container">
@@ -114,8 +112,8 @@
                             <li>Kegiatan Penanganan Taman dan Lain-Lain</li>
                             <li>Non Bonus OVO Points</li>
                         </ul>
-                        <button type="button" class="btn btn-lg btn-block btn-primary">Pesan</button>
-                    </div>
+                        <a href ="PemesananCheckOut.php"><button type="button" class="btn btn-lg btn-block btn-primary bg-success">Pesan</button></a>               
+                         </div>
                 </div>
 
                 <div class="card mb-4 shadow-sm">
@@ -129,7 +127,7 @@
                             <li>Kegiatan Pembersihan dalam Waktu 2 Hari Jangka Waktu 4 jam</li>
                             <li>Bonus OVO Points <b>5K-10K</b></li>
                         </ul>
-                        <button type="button" class="btn btn-lg btn-block btn-primary">Pesan</button>
+                        <a href ="PemesananCheckOut.php"><button type="button" class="btn btn-lg btn-block btn-primary bg-success">Pesan</button></a>
                     </div>
                 </div>
 
@@ -144,7 +142,7 @@
                             <li>Kegiatan Pembersihan dalam Waktu 3 Hari Jangka Waktu 3 jam</li>
                             <li>Bonus OVO Points <b>8K-15K</b></li>
                         </ul>
-                        <button type="button" class="btn btn-lg btn-block btn-primary">Pesan</button>
+                        <a href ="PemesananCheckOut.php"><button type="button" class="btn btn-lg btn-block btn-primary bg-success">Pesan</button></a>
                     </div>
                 </div>
             </div>
@@ -152,41 +150,42 @@
 
 
     <!-- Footer -->
-    <footer class="pt-4 my-md-5 pt-md-5 border-top bg-dark">
-        <div class="row">
+    <footer class="pt-4  border-top bg-white">
+        <div class="row text-justify">
+
             <div class="col-12 col-md">
-                <img class="mb-2" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
-                <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
+                <img class="mb-2" src="img/Tanggapan2.png" alt="" width="150" height="150">
             </div>
-            <div class="col-6 col-md">
-                <h5>Features</h5>
+
+            <div class="col-4 col-md">
+
+            </div>
+            <div class="col-4 col-md">
+                <h5>Media Sosial</h5>
                 <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Cool stuff</a></li>
-                    <li><a class="text-muted" href="#">Random feature</a></li>
-                    <li><a class="text-muted" href="#">Team feature</a></li>
-                    <li><a class="text-muted" href="#">Stuff for developers</a></li>
-                    <li><a class="text-muted" href="#">Another one</a></li>
-                    <li><a class="text-muted" href="#">Last time</a></li>
+                    <li><p style="background-color:rgb(255, 255, 255);color:rgb(61, 125, 29)"><b>INSTAGRAM</b></li>
+                    <li><a class="text-muted" href="#"><b>@xalfaris_26</b></a></li>
+                    <li><p style="background-color:rgb(255, 255, 255);color:rgb(61, 125, 29)"><b>FACEBOOK</b></li>
+                    <li><a class="text-muted" href="#"><b>Faris Ikhlasul Haq</b></a></li>
                 </ul>
             </div>
-            <div class="col-6 col-md">
-                <h5>Resources</h5>
+
+            <div class="col-4 col-md">
+                <h5>Our Service</h5>
                 <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Resource</a></li>
-                    <li><a class="text-muted" href="#">Resource name</a></li>
-                    <li><a class="text-muted" href="#">Another resource</a></li>
-                    <li><a class="text-muted" href="#">Final resource</a></li>
+                    <li><a class="text-muted" href="Recycle.html">Recycle</a></li>
+                    <li><a class="text-muted" href="Pengolahan.html">Pengolahan</a></li>
+                    <li><a class="text-muted" href="Agen.html">Agen Kebersihan</a></li>
+                    <li><a class="text-muted" href="Pemanggilan.html">Pemanggilan Sampah</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-md">
-                <h5>About</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Team</a></li>
-                    <li><a class="text-muted" href="#">Locations</a></li>
-                    <li><a class="text-muted" href="#">Privacy</a></li>
-                    <li><a class="text-muted" href="#">Terms</a></li>
-                </ul>
+            <div class="col-4 col-md">
+                
+                </div>
+            <div class="col-12 col-md">
+            <img class="mb-2 rounded-circle" src="img/WastOProfil.png" alt="" width="150" height="150">
             </div>
+
         </div>
     </footer>
     </div>

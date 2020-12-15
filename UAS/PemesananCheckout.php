@@ -16,7 +16,7 @@
                 
                 <div class="row">
                     <div style="display: table; margin: auto;">
-                        <span class="step step_complete"> <a href="Home.php" class="check-bc">Home</a> <span class="step_line step_complete"> </span> <span class="step_line backline"> </span> </span>
+                        <span class="step step_complete"> <a href="index.php" class="check-bc">Home</a> <span class="step_line step_complete"> </span> <span class="step_line backline"> </span> </span>
                         <span class="step step_complete"> <a href="Pemesanan.php" class="check-bc">Pemesanan</a> <span class="step_line "> </span> <span class="step_line step_complete"> </span> </span>
                     </div>
                 </div>

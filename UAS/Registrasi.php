@@ -44,7 +44,7 @@
                         <input type="text" class="form-control" placeholder="Nama" name="nama">
                     </div>
                     <div class="form-group">
-                        <label>Tanggal Lahir</label>
+                        <label>Tanggal Lahir (YYYY-MM-DD)</label>
                         <input type="text" class="form-control" placeholder="Tanggal Lahir" name="ttl">
                     </div>
                     <div class="form-group">

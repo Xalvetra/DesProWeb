@@ -25,3 +25,7 @@ body {
     background-size: 140%;
     background-attachment: fixed;
 }
+
+.bg-warna {
+    background-color: rgb(68, 202, 88);
+}

@@ -153,7 +153,7 @@
     </section>
 
     <!-- Section Lokasi -->
-    <section id="Lokasi" class="Lokasi ">
+    <section id="Lokasi" class="Lokasi">
         <div class="container-Lokasi">
             <div class="container ">
                 <div class="row mt-4 mb-4 ">

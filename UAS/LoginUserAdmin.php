@@ -21,7 +21,7 @@
              
     </div>
     <div class="col-md ml-5 mr-4 pt-5 mt-2 ">
-    <a href="Home.php"><img src="img/HomeButton.png" width="55" height="55 " href="Home.php"></a>\
+    <a href="index.php"><img src="img/HomeButton.png" width="55" height="55 " href="Home.php"></a>\
     <p><b>HOME</b></p>
     </div>
     </div>

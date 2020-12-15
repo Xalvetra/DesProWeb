@@ -20,8 +20,6 @@
             <p><b>GO</b> Waste <b>GO</b> Stack </p>
         </div>
 
-        
-
         <div class="login-main-text">
             <h2><b>Wast'</b><i>O</i><br>Masuk</h2>
             <p>ADMIN ONLY LOGIN</p>
@@ -43,7 +41,7 @@
                 </form>
                 <br>
                 <div class="ml-1">
-                 <a href="Home.php"><img src="img/HomeButton.png" width="45" height="45"></a> 
+                 <a href="index.php"><img src="img/HomeButton.png" width="45" height="45"></a> 
                 </div>
             </div>
         </div>
@@ -64,7 +62,7 @@
 
         if($cektest){
             echo "<script>alert('Admin Masuk');history.go(-1); </script>";
-            header('Location: Pemesanan.php');
+            header('Location: DataCek.php');
             } else{
             echo "<script>alert('Gagal Masuk / Anda Bukan Admin');history.go(-1);</script>";
             echo mysqli_error($connect);
