@@ -13,9 +13,18 @@
     <link rel='stylesheet' type='text/css' media='screen' href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min1.css">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1/jquery-ui.css" />
+    <script type="text/javascript" src="jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="jquery-3.5.1.js"></script>
+    
     <!-- Title -->
     <title>Wast'O</title>
-    
+    <script type="text/javascript">
+            $(function(){
+                $("#date_ex").datepicker({ dateFormat: 'yy-mm-dd' });
+           });
+        </script>
 </head>
 
 <body class="mt-4">
@@ -36,6 +45,7 @@
                     <a class="nav-link" href="#Produk">Produk</a>
                     <a class="nav-link" href="#Lokasi">Lokasi</a>
                     <a class="nav-link" href="#tanggapan">Tanggapan Anda</a>
+
                 </div>
 
             </div>

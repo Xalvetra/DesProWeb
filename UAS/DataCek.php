@@ -18,15 +18,16 @@
 
   <div class="d-flex" id="wrapper">
     <div class="bg-light border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">Menu</div>
+    <div class="sidebar-heading" style="background-color:yellowgreen; color:white">Menu</div>
       <div class="list-group list-group-flush">
-        <a href="#dt" class="list-group-item list-group-item-action bg-light">Tanggapan</a>
-        <a href="#p" class="list-group-item list-group-item-action bg-light">Pemesanan</a>
-        <a href="#r" class="list-group-item list-group-item-action bg-light">Registrasi</a>
+        <a href="#dt" class="list-group-item list-group-item-action bg-light"style="color:green"><b>Tanggapan<b></a>
+        <a href="#p" class="list-group-item list-group-item-action bg-light"style="color:green"><b>Pemesanan<b></a>
+        <a href="#r" class="list-group-item list-group-item-action bg-light"style="color:green"><b>Registrasi<b></a>
+        <a href="UpdateData.php" class="list-group-item list-group-item-action bg-light"style="color:green"><b>Update Data User<b></a>
       </div>
     </div>
 
-    <div id="page-content-wrapper">
+    <div id="page-content-wrapper" style="background-image:url('img/TesItem3.png'); color:black">
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +37,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="index.php">Home</a>
+              <a href="index.php"><img src="img/TulisanLogoPojok.png" width="90" height="30" class="d-inline-block align-top mt-2" alt="" loading="lazy"></a>
             </li>
           </ul>
         </div>

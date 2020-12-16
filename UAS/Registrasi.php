@@ -6,9 +6,18 @@
     <title>Register</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-    <!-- CSS File -->
+    <!-- Jquery File -->
+    <link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1/jquery-ui.css" />
+    <script type="text/javascript" src="jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="jquery-3.5.1.js"></script>
+    <!-- CSS -->
     <link rel='stylesheet' type='text/css' media='screen' href="style1.css">
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" id="bootstrap-css"  href="bootstrap/css/bootstrap.min.css" >
+        <script type="text/javascript">
+            $(function(){
+                $("#date_ex").datepicker({ dateFormat: 'yy-mm-dd' });
+           });
+        </script>
 </head>
 
 <body>
@@ -45,7 +54,7 @@
                     </div>
                     <div class="form-group">
                         <label>Tanggal Lahir (YYYY-MM-DD)</label>
-                        <input type="text" class="form-control" placeholder="Tanggal Lahir" name="ttl">
+                        <input type="text" class="form-control" placeholder="Tanggal Lahir" id="ttl" name="ttl">
                     </div>
                     <div class="form-group">
                         <label>Alamat</label>
@@ -57,7 +66,7 @@
             <section id="proses" class="proses">
                 <?php
                     if(isset($_GET["register"])){
-                    include "koneksi.php";
+                    include "conn.php";
 
                     $id=$_GET['id'];
                     $username=$_GET['username'];
@@ -88,7 +97,6 @@
 
     <!-- Jquery & Javascript -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="jquery-ui-1.12.1/jquery-ui.min.css"></script>
 </body>
 
 </html>

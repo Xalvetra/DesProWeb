@@ -118,7 +118,7 @@
                             </div>
                             <div class="form-group">
                                 <div class="col-md-12"
-                                ><strong>Tanggal Lahir</strong></div>
+                                ><strong>Tanggal Lahir (YYYY-MM-DD)</strong></div>
                                 <div class="col-md-12">
                                     <input type="text"  class="form-control" name="ttl" value="" />
                                 </div>
@@ -189,10 +189,10 @@
 
 
                     if (mysqli_query($connect, $sql)){
-                        echo "<script>alert('Anda Berhasil Login');history.go(-1); </script>";
+                        echo "<script>alert('Anda Berhasil Membooking');history.go(-1); </script>";
                         header('Location: Pemesanan.php');
                         } else{
-                        echo "<script>alert('Gagal Login');history.go(-1);</script>";
+                        echo "<script>alert('Gagal Booking ada yang Kosong');history.go(-1);</script>";
                         echo mysqli_error($connect);
                     }
                     mysqli_close($connect);

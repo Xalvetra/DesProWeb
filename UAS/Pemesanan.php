@@ -59,7 +59,7 @@
                             <li>Mengikuti Wilayah RT/RW</li>
                             <li>Non Bonus OVO Points</li><br>
                         </ul>
-                        <a href ="PemesananCheckOut.php"><button type="button" class="btn btn-lg btn-block btn-primary bg-success">Pesan</button></a>
+                        <a href ="PemesananCheckout.php"><button type="button" class="btn btn-lg btn-block btn-primary bg-success">Pesan</button></a>
                     </div>
                 </div>
                 <div class="card mb-4 shadow-sm">
@@ -73,7 +73,7 @@
                             <li>Bisa Private / Mengikuti Wilayah RT/RW</li>
                             <li>Bonus OVO Points <b>5K-10K</b></li>
                         </ul>
-                        <a href ="PemesananCheckOut.php"><button type="button" class="btn btn-lg btn-block btn-primary bg-success">Pesan</button></a>
+                        <a href ="PemesananCheckout.php"><button type="button" class="btn btn-lg btn-block btn-primary bg-success">Pesan</button></a>
                     </div>
                 </div>
                 <div class="card mb-4 shadow-sm">
@@ -87,7 +87,7 @@
                             <li>Bisa Private / Mengikuti Wilayah RT/RW</li>
                             <li>Bonus OVO Points <b>8K-15K</b></li>
                         </ul>
-                        <a href ="PemesananCheckOut.php"><button type="button" class="btn btn-lg btn-block btn-primary bg-success">Pesan</button></a>
+                        <a href ="PemesananCheckout.php"><button type="button" class="btn btn-lg btn-block btn-primary bg-success">Pesan</button></a>
                     </div>
                 </div>
             </div>
@@ -112,7 +112,7 @@
                             <li>Kegiatan Penanganan Taman dan Lain-Lain</li>
                             <li>Non Bonus OVO Points</li>
                         </ul>
-                        <a href ="PemesananCheckOut.php"><button type="button" class="btn btn-lg btn-block btn-primary bg-success">Pesan</button></a>               
+                        <a href ="PemesananCheckout.php"><button type="button" class="btn btn-lg btn-block btn-primary bg-success">Pesan</button></a>               
                          </div>
                 </div>
 
@@ -127,7 +127,7 @@
                             <li>Kegiatan Pembersihan dalam Waktu 2 Hari Jangka Waktu 4 jam</li>
                             <li>Bonus OVO Points <b>5K-10K</b></li>
                         </ul>
-                        <a href ="PemesananCheckOut.php"><button type="button" class="btn btn-lg btn-block btn-primary bg-success">Pesan</button></a>
+                        <a href ="PemesananCheckout.php"><button type="button" class="btn btn-lg btn-block btn-primary bg-success">Pesan</button></a>
                     </div>
                 </div>
 
@@ -142,7 +142,7 @@
                             <li>Kegiatan Pembersihan dalam Waktu 3 Hari Jangka Waktu 3 jam</li>
                             <li>Bonus OVO Points <b>8K-15K</b></li>
                         </ul>
-                        <a href ="PemesananCheckOut.php"><button type="button" class="btn btn-lg btn-block btn-primary bg-success">Pesan</button></a>
+                        <a href ="PemesananCheckout.php"><button type="button" class="btn btn-lg btn-block btn-primary bg-success">Pesan</button></a>
                     </div>
                 </div>
             </div>
